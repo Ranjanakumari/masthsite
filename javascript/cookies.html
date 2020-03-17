@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset ="utf-8">
+    <title> cookies  </title>
+    </head>
+    <body>
+    <p id="myParagraph">cookies
+        </p>
+        <script>
+           /*cookies help us to remember the information about the user that what is the name etc after some interval of time*/
+            document.cookie = "username = anjana";
+            document.cookie = "age = 17";
+            document.cookie = "country = india";
+            document.cookie = "gender = female"; 
+            window.alert(document.cookie);
+            var cookie = document.cookie.split(';');
+            window.alert(cookie);
+            for( i=0;i<cookie.length ;i++)
+                {
+                    document.getElementById("myPaagraph").innerHTML += "<br/>" +cookie[i];
+                }
+        </script>
+    </body>
+</html> 

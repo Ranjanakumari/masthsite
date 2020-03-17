@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>window and screen
+        </title>
+        <style>
+            #div1{
+                background-color: #dbee5c;
+            }
+              #div2{
+                background-color: darkred;
+            }
+              #div3{
+                background-color: #dbee9c;
+            }
+              #div4{
+                background-color: green;
+            }
+            .equalbox{
+                float:left;
+                margin-left: 1px;
+                
+}
+         </style>
+    </head>
+    <!--some properties of windows and screen-->
+    <body>
+        <div id="div1" class="equalbox">div1
+        </div>
+        <div id="div2" class="equalbox">div2
+        </div>
+        <div id="div3" class="equalbox">div3
+        </div>
+        <div id="div4" class="equalbox">div4
+        </div>
+        <script>
+           var windowHeight = window.innerHeight||document.documentElement.clientHeight||
+               document.body.clientHeight;
+            //window.alert(windowHeight);
+            //access the widthnof the user screen
+            var screenWidth = window.screen.width;
+            //window.alert(screenWidth); 
+            //available height
+            var availableScreenHeight =window.screen.availHeight;
+           // window.alert(availableScreenHeight);
+            for( i=1;i<5;i++){
+            document.getElementById("div" + i).style.width =
+                window.innerWidth/4-10+'px';
+             document.getElementById("div" + i).style.height=
+                window.innerHeight-10+'px';
+            }
+            
+            
+        </script>
+    </body>
+</html>
