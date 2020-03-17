@@ -1,0 +1,2 @@
+# masthsite
+static one website
